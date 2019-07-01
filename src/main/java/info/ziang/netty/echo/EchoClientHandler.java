@@ -62,12 +62,13 @@ public class EchoClientHandler extends ChannelInboundHandlerAdapter {
      * @return
      */
     public List<User> getUserArrayData() {
-        User[] users = new User[5];
+        int c = 1000;
+        User[] users = new User[c];
         User loopUser = null;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < c; i++) {
             loopUser = new User();
             loopUser.setpId(i + 1);
-            loopUser.setpName("华安" + Thread.currentThread().getName());
+            loopUser.setpName("Za-" + Thread.currentThread().getName());
             loopUser.setIsMarry(true);
             loopUser.setBirthday(new Date());
             users[i] = loopUser;

@@ -36,10 +36,10 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
          * 注意：如果对方传输只是简单的 String 对象，则不能强转为 List<Object>
          */
 
-        /* List<Object> objects = (List<Object>) msg;
+        List<Object> objects = (List<Object>) msg;
         for (Object obj : objects) {
             System.out.println("属性：" + obj);
-        }*/
+        }
 
         /**
          * 服务端接收到客户端发送来的数据后，再回发给客户端
